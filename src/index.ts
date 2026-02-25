@@ -1,18 +1,24 @@
-import decimalSystemOnly from "./rules/decimal-system-only";
+import decimalSystemOnly from "./rules/decimal-system-only.js";
 
-export const rules = {
-  "decimal-system-only": decimalSystemOnly,
-};
-
-export const configs = {
-  recommended: {
-    rules: {
-      "decimal/decimal-system-only": "error",
-    },
+const plugin = {
+  rules: {
+    "decimal-system-only": decimalSystemOnly,
   },
 };
 
-export default {
-  rules,
-  configs,
+export const rules = plugin.rules;
+
+export const configs = {
+  recommended: [
+    {
+      plugins: {
+        decimal: plugin,
+      },
+      rules: {
+        "decimal/decimal-system-only": "error",
+      },
+    },
+  ],
 };
+
+export default plugin;
