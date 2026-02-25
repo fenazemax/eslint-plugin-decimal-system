@@ -1,21 +1,21 @@
 import { ESLintUtils } from '@typescript-eslint/utils';
-import { NON_DECIMAL_REGEX } from '../regex';
+import { NON_DECIMAL_REGEX } from '../regex.js';
 
 const rule = ESLintUtils.RuleCreator.withoutDocs({
   create(context) {
     return {
-        Literal(node) {
-          if (
-            (typeof node.value === "number" || typeof node.value === "bigint") && 
-            typeof node.raw === 'string' && 
-            NON_DECIMAL_REGEX.test(node.raw)
-          ) {
-            context.report({
-              messageId: 'unexpected',
-              node
-            })
-          }
+      Literal(node) {
+        if (
+          (typeof node.value === "number" || typeof node.value === "bigint") &&
+          typeof node.raw === 'string' &&
+          NON_DECIMAL_REGEX.test(node.raw)
+        ) {
+          context.report({
+            messageId: 'unexpected',
+            node
+          })
         }
+      }
     }
   },
   meta: {
