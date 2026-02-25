@@ -1,5 +1,5 @@
 {
-  "name": "@fenazemax/eslint-plugin-decimal-system",
+  "name": "eslint-plugin-decimal-system",
   "version": "1.0.0",
   "description": "ESLint plugin that allows only decimal numeric literals",
   "type": "module",
