@@ -1,4 +1,4 @@
-## @fenazemax/eslint-plugin-decimal-system
+## eslint-plugin-decimal-system
 
 ESLint plugin that enforces usage of decimal numeric literals only.
 
@@ -15,7 +15,7 @@ Allows:
 
 ## Installation
 ```bash
-npm install --save-dev @fenazemax/eslint-plugin-decimal-system
+npm install --save-dev eslint-plugin-decimal-system
 ```
 
 Peer dependency:
@@ -26,7 +26,7 @@ npm install --save-dev eslint
 ### Usage
 ESLint 9 (Flat Config)
 ```js
-import decimal from "@fenazemax/eslint-plugin-decimal-system";
+import decimal from "eslint-plugin-decimal-system";
 
 export default [
   {
