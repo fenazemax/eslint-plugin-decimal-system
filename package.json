@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-decimal-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint plugin that allows only decimal numeric literals",
   "type": "module",
   "exports": {
@@ -11,8 +11,13 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
-  "keywords": ["eslint", "eslintplugin"],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "eslint": ">=9 <11"
