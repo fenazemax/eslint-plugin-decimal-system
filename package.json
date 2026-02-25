@@ -15,7 +15,7 @@
   "keywords": ["eslint", "eslintplugin"],
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": ">=9 <11"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
