@@ -23,23 +23,27 @@ Peer dependency:
 npm install --save-dev eslint
 ```
 
+### What the plugin exports
+
+- default → plugin (contains `rules` and `configs`)
+
+- named export → `rules`
+
 ### Usage
-ESLint 9 (Flat Config)
+ESLint 9 
 ```js
+import { defineConfig } from "eslint/config";
 import decimal from "eslint-plugin-decimal-system";
 
-export default [
-  {
-    plugins: {
-      decimal,
-    },
-  },
+export default defineConfig([
   ...decimal.configs.recommended,
-];
+])
+
 ```
 
 Or enable manually:
 ```js
+import decimal from "eslint-plugin-decimal-system";
 
 export default [
   {
@@ -49,22 +53,6 @@ export default [
     },
   },
 ];
-```
-### Legacy Config (.eslintrc)
-```js
-{
-  "extends": ["plugin:decimal/recommended"]
-}
-```
-
-Or:
-```js
-{
-  "plugins": ["decimal"],
-  "rules": {
-    "decimal/decimal-system-only": "error"
-  }
-}
 ```
 
 ### Rule Details

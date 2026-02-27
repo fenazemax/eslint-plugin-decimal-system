@@ -1,5 +1,5 @@
 import { ESLintUtils } from '@typescript-eslint/utils';
-import { NON_DECIMAL_REGEX } from '../regex.js';
+import { NON_DECIMAL_REGEX } from '../constants/index.js';
 
 const rule = ESLintUtils.RuleCreator.withoutDocs({
   create(context) {

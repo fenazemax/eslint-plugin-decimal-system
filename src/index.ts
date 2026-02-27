@@ -1,24 +1,31 @@
+import { RULE_NAME } from "./constants/index.js";
 import decimalSystemOnly from "./rules/decimal-system-only.js";
+import { Plugin } from "./types/index.js";
 
-const plugin = {
-  rules: {
-    "decimal-system-only": decimalSystemOnly,
+const plugin: Plugin = {
+  meta: {
+    name: "eslint-plugin-decimal-system",
+    version: "1.0.6",
   },
+  rules: {
+    [RULE_NAME]: decimalSystemOnly,
+  },
+  configs: {},
 };
 
 export const rules = plugin.rules;
 
-export const configs = {
+Object.assign(plugin.configs, {
   recommended: [
     {
       plugins: {
         decimal: plugin,
       },
       rules: {
-        "decimal/decimal-system-only": "error",
+        [`decimal/${RULE_NAME}`]: "error",
       },
-    },
-  ],
-};
+    }
+  ]
+})
 
 export default plugin;
