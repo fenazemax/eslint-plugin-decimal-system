@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "NodeNext",
+    "lib": ["ES2023"],
     "moduleResolution": "NodeNext",
     "rootDir": "src",
     "outDir": "dist",
@@ -9,5 +10,6 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "src/test"]
 }
