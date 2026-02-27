@@ -29,7 +29,7 @@ npm install --save-dev eslint
 
 - named export → `rules`
 
-### Usage
+## Usage
 ESLint 9 
 ```js
 import { defineConfig } from "eslint/config";
@@ -55,7 +55,7 @@ export default [
 ];
 ```
 
-### Rule Details
+## Rule Details
 
 - The rule checks all Literal AST nodes and reports when:
 
@@ -63,7 +63,7 @@ export default [
 
 - The raw source starts with 0x, 0b, or 0o
 
-### When to Use
+## When to Use
 
 - This rule is useful when:
 
@@ -75,6 +75,6 @@ export default [
 
 - Preventing accidental octal usage
 
-### License
+## License
 
 ISC
