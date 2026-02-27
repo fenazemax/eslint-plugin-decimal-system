@@ -5,7 +5,7 @@ import { Plugin } from "./types/index.js";
 const plugin: Plugin = {
   meta: {
     name: "eslint-plugin-decimal-system",
-    version: "1.0.6",
+    version: "1.0.7",
   },
   rules: {
     [RULE_NAME]: decimalSystemOnly,
