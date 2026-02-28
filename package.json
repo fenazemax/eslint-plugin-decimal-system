@@ -9,6 +9,14 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fenazemax/eslint-plugin-decimal-system.git"
+  },
+  "homepage": "https://github.com/fenazemax/eslint-plugin-decimal-system#readme",
+  "bugs": {
+    "url": "https://github.com/fenazemax/eslint-plugin-decimal-system/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
